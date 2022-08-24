@@ -1,0 +1,86 @@
+.gallery{
+        
+        &__container {
+            flex-direction: column;
+        }
+    
+        &__grid {
+            flex-wrap: wrap;
+            margin-top: calc(-1 * $list-gap);
+            margin-left: calc(-1 * $list-gap);
+        }
+    
+        &__item {
+            flex-basis: calc(100% / 3);
+            margin-left: $list-gap;
+            margin-top: $list-gap;
+            max-width: 370px;
+            background: $light-color;
+            box-sizing: border-box;
+        }
+    
+        &__link {
+            display: inline-block;
+            padding: 0px;
+            margin: 0px;
+            text-decoration: none;
+            color: $main-color;
+            max-width: 370px;
+            transition: box-shadow $main-animation;
+        }
+    
+        &__link:hover,
+        &__link:focus {
+            box-shadow: $gallery-link-shadow;
+        }
+    
+        &__paragraph {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.9;
+            display: block;
+            color: $second-color;
+        }
+    
+        &__title {
+            display: block;
+            margin-bottom: 4px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 2;
+            letter-spacing: 0.06em;
+        }
+    
+        &__description {
+            padding: 20px 24px;
+            border: 1px solid $gallery-element-border-color;
+            border-top: none;
+        }
+    
+        &__overlay {
+            position: relative;
+            height: 100%;
+            overflow: hidden;
+        }
+    
+        &__text {
+            position: absolute;
+            display: inline-block;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            padding: 49px 45px 49px 24px;
+            overflow: hidden;
+            font-size: 18px;
+            line-height: 1.56;
+            color: $light-color;
+            background-color: $overlay-card-color;
+            transform: translateY(101%);
+            transition: transform $main-animation;
+        }
+    
+        &__link:hover &__text,
+        &__link:focus &__text {
+            transform: translateY(0%);
+        }
+}

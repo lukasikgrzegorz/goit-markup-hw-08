@@ -1,0 +1,16 @@
+.footer {
+    color: $light-color;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    background-color: $background-dark-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+        &__container {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+}
+

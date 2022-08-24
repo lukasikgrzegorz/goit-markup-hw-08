@@ -1,0 +1,13 @@
+.element-decoration {
+    display: block;
+    width: 100%;
+    border: 1px solid $submit-element-decoration-color;
+    border-radius: 4px;
+    transition: border $main-animation;
+
+    &:focus {
+            border: 1px solid $light-accent-color;
+            outline: none;
+        }
+}
+

@@ -1,0 +1,31 @@
+@import './utils/variables';
+
+@import './components/_common.scss';
+
+/*header*/
+@import './components/_header.scss';
+@import './components/_logo.scss';
+@import './components/_navigation.scss';
+@import './components/_contacts.scss';
+/*end of header*/
+
+@import './components/_banner.scss';
+@import './components/_features.scss';
+@import './components/_services.scss';
+@import './components/_team.scss';
+@import './components/_member.scss';
+@import './components/_socialmedia.scss';
+@import './components/_client.scss';
+@import './components/_gallery.scss';
+@import './components/_filters.scss';
+
+/*footer*/
+@import './components/_footer.scss';
+@import './components/_address.scss';
+@import './components/_followus.scss';
+/*end of footer*/
+
+@import './components/_modal.scss';
+@import './components/_element-decoration.scss';
+@import './components/_submit-form.scss';
+

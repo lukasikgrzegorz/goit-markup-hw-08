@@ -1,0 +1,36 @@
+.filters {
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+        &__item:not(:last-child) {
+            margin-right: 8px;
+        }
+    
+        &__button {
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.67;
+            letter-spacing: 0.03em;
+            font-style: normal;
+            border-style: hidden;
+            border-radius: 4px;
+            padding: 6px 22px;
+            color: $main-color;
+            background-color: $background-light-color;
+            cursor: pointer;
+            transition: color $main-animation,
+                background-color $main-animation,
+                box-shadow $main-animation;
+        }
+    
+        &__button:hover,
+        &__button:focus,
+        &__button:active {
+            color: $light-color;
+            background-color: $accent-color;
+            box-shadow: $portfolio-button-shadow;
+        }
+}
+

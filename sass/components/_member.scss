@@ -1,0 +1,31 @@
+.member {
+    width: auto;
+    margin-left: $list-gap;
+    flex-basis: calc(100% / 4);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: $team-member-shadow;
+    background: $light-color;
+
+         &__description {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    
+        &__title {
+            justify-content: center;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.18;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    
+        &__paragraph {
+            font-size: 16px;
+            line-height: 1.19;
+            justify-content: center;
+            color: $second-color;
+            text-align: center;
+        }
+}
+

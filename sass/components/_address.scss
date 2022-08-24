@@ -1,0 +1,31 @@
+.address {
+    flex-direction: column;
+
+        &__list {
+            padding-top: 20px;
+            display: block;
+        }
+    
+        &__item:not(:last-child) {
+            font-style: normal;
+            margin-bottom: 9px;
+        }
+    
+        &__place {
+            font-style: normal;
+        }
+    
+        &__link {
+            text-decoration: none;
+            color: $contacts-footer-link-color;
+            transition: $main-animation;
+
+                &:hover,
+                &:focus {
+                    color: $accent-color;
+                }
+        }
+    
+        
+}
+

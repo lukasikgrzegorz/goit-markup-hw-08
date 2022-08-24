@@ -1,0 +1,15 @@
+.header {
+    border-bottom: 1px solid $header-border-color;
+        
+        &__container {
+                align-items: center;
+                justify-content: space-between;
+        }
+        
+        &__logo {
+                padding-top: 24px;
+                padding-bottom: 24px;
+        }
+    
+}
+

@@ -24,6 +24,7 @@ ul {
 img {
     display: block;
     max-width: 100%;
+    height: auto;
     padding: 0;
     margin: 0;
 }
@@ -35,15 +36,15 @@ li {
 .container {
     display: flex;
     flex-wrap: wrap;
-    width: 1200px;
+    width: 480px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0px auto;
 }
 
 .section {
-    padding-top: $large-padding;
-    padding-bottom: $large-padding;
+    padding-top: $small-padding;
+    padding-bottom: $small-padding;
 }
 
 .backdrop {

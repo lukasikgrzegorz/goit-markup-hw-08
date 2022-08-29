@@ -1,24 +1,22 @@
 .banner {
     max-width: 1600px;
-    padding: 200px 0;
+    min-width: 480px;
+    padding: 118px 0 118px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     background-color: $background-dark-color;
     background-image: $banner-gradient, url(../images/banner-background.jpg);
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-
-    &__container {
-            flex-direction: column;
-        }
+    
     
         &__tittle {
-            width: 696px;
+            width: 365px;
             font-weight: 900;
-            font-size: 44px;
-            line-height: 1.37;
+            font-size: 26px;
+            line-height: 1.61;
             letter-spacing: 0.06em;
             text-transform: uppercase;
             text-align: center;

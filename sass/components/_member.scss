@@ -1,12 +1,15 @@
 .member {
-    width: auto;
+    width: 450px;
     margin-left: $list-gap;
-    flex-basis: calc(100% / 4);
     border-radius: 0px 0px 4px 4px;
     box-shadow: $team-member-shadow;
     background: $light-color;
 
-         &__description {
+        &:not(:last-child){
+            margin-bottom: 30px;
+        }
+
+        &__description {
             padding-top: 30px;
             padding-bottom: 30px;
         }

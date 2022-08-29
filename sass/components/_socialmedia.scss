@@ -1,7 +1,10 @@
 .socialmedia{
         
         &--down {
-            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 60px;
         }
     
         &__paragraph {
@@ -12,6 +15,7 @@
             letter-spacing: 0.03em;
             text-transform: uppercase;
             color: $light-color;
+            text-align: center;
         }
     
         &__list {

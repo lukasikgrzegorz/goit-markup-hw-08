@@ -5,8 +5,12 @@
     box-shadow: $team-member-shadow;
     background: $light-color;
 
-        &:not(:last-child){
-            margin-bottom: 30px;
+        @media screen and (min-width: 768px) {
+            &{  
+                width: auto;
+                margin-left: 0;
+                flex-basis: calc((100% - $list-gap) / 2);
+            }
         }
 
         &__description {

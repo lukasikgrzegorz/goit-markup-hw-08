@@ -24,6 +24,7 @@
             margin-left: calc(-1 * $list-gap);
             display: flex;
             flex-wrap: wrap;
+            gap: $list-gap;
         }
 }
 

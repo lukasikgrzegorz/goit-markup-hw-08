@@ -42,6 +42,11 @@ li {
   margin: 0px auto;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -130,6 +135,11 @@ li {
   letter-spacing: 0.02em;
   margin-left: 93px;
 }
+@media screen and (min-width: 768px) {
+  .navigation__list {
+    display: flex;
+  }
+}
 .navigation__item:not(:last-child) {
   margin-right: 50px;
 }
@@ -167,7 +177,6 @@ li {
 }
 
 .contacts {
-  display: flex;
   display: none;
   align-items: center;
   font-weight: 500;
@@ -176,23 +185,24 @@ li {
   letter-spacing: 0.02em;
   font-style: normal;
 }
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 .contacts__item {
   display: flex;
-  margin-top: -32px;
-  margin-bottom: -32px;
 }
 .contacts__icon {
   margin: 0 10px 0 0;
   fill: currentColor;
 }
 .contacts__item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 0px;
 }
 .contacts__link {
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   text-decoration: none;
   color: #757575;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -340,6 +350,11 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media screen and (min-width: 768px) {
+  .banner__container {
+    flex-direction: column;
+  }
+}
 .banner__tittle {
   width: 365px;
   font-weight: 900;
@@ -379,14 +394,17 @@ li {
 .features__list {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
 .features__item {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.features__item:not(:first-child) {
-  margin-top: 30px;
+@media screen and (min-width: 768px) {
+  .features__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
 .features__title {
   margin-bottom: 10px;
@@ -477,6 +495,7 @@ li {
   margin-left: -30px;
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .member {
@@ -486,8 +505,12 @@ li {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background: #ffffff;
 }
-.member:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .member {
+    width: auto;
+    margin-left: 0;
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
 .member__description {
   padding-top: 30px;
@@ -513,7 +536,6 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 60px;
 }
 .socialmedia__paragraph {
   padding-bottom: 20px;
@@ -583,6 +605,11 @@ li {
 .client {
   flex-basis: calc((100% - 30px) / 2);
 }
+@media screen and (min-width: 768px) {
+  .client {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
 .client__link {
   display: flex;
   width: 100%;
@@ -609,15 +636,16 @@ li {
 }
 .gallery__grid {
   flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+  gap: 30px;
 }
 .gallery__item {
-  margin-left: 30px;
-  margin-top: 30px;
-  width: 450px;
   background: #ffffff;
   box-sizing: border-box;
+}
+@media screen and (min-width: 768px) {
+  .gallery__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
 .gallery__link {
   display: inline-block;
@@ -627,6 +655,11 @@ li {
   color: #212121;
   width: 450px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .gallery__link {
+    width: auto;
+  }
 }
 .gallery__link:hover, .gallery__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -686,6 +719,13 @@ li {
   flex-wrap: wrap;
   row-gap: 15px;
 }
+@media screen and (min-width: 768px) {
+  .filters {
+    flex-wrap: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .filters__item:not(:last-child) {
   margin-right: 8px;
 }
@@ -723,12 +763,21 @@ li {
 }
 .footer__container {
   flex-direction: column;
+  row-gap: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
 }
 
 .address {
   flex-direction: column;
   text-align: center;
-  margin-bottom: 60px;
 }
 .address__list {
   padding-top: 20px;

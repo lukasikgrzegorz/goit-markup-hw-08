@@ -2,16 +2,19 @@
     &__list {
             display: flex;
             flex-wrap: wrap;   
+            gap: $list-gap;
         }
     
         &__item {
             display: flex;
             flex-direction: column;
             align-items: center;
-        }
 
-        &__item:not(:first-child){
-            margin-top: 30px;
+            @media screen and (min-width: 768px) {
+                & {
+                flex-basis: calc((100% - $list-gap)/2) ;
+                }
+            }
         }
     
         &__title {

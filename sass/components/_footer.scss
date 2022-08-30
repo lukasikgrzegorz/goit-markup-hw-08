@@ -17,8 +17,14 @@
                   flex-direction: row;
                   align-items: center;
                   justify-content: center;
-                  column-gap: $list-gap;
-                  
+                  column-gap: $list-gap;   
+                }
+            }
+
+            @media screen and (min-width: 1200px) {
+                & {
+                  justify-content: space-between;
+                  align-items: baseline;
                 }
             }
         }

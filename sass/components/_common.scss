@@ -8,6 +8,12 @@ body {
     letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 320px) {
+    body {
+        overflow-x: none;
+    }
+}
+
 h1,
 h2,
 h3,
@@ -46,9 +52,22 @@ li {
     .container{width: 768px;}
 }
 
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
+
 .section {
     padding-top: $small-padding;
     padding-bottom: $small-padding;
+}
+
+@media screen and (min-width: 1200px) {
+    .section {
+        padding-top: $large-padding;
+        padding-bottom: $large-padding;
+    }
 }
 
 .backdrop {

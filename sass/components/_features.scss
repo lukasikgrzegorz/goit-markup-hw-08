@@ -15,6 +15,12 @@
                 flex-basis: calc((100% - $list-gap)/2) ;
                 }
             }
+
+            @media screen and (min-width: 1200px) {
+                & {
+                flex-basis: calc((100% - $list-gap * 3)/4) ;
+                }
+            }
         }
     
         &__title {

@@ -1,14 +1,17 @@
 .services{
         display:none;
+        margin-top: -94px;
+
+        @media screen and (min-width: 1200px) {
+                & {
+                    display: flex;
+                }
+            }
 
         &__container {
-            flex-direction: column;
-            padding-top: 50px;
-            
+            flex-direction: column;    
         }
 
-       
-    
         &__list {
             justify-content: space-between;
         }

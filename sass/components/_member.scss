@@ -13,6 +13,14 @@
             }
         }
 
+        @media screen and (min-width: 1200px) {
+            &{  
+                width: auto;
+                margin-left: 0;
+                flex-basis: calc((100% - $list-gap * 3) / 4);
+            }
+        }
+
         &__description {
             padding-top: 30px;
             padding-bottom: 30px;

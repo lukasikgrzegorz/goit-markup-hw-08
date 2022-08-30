@@ -10,7 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./sass/main.css">
     <title>Portfolio</title>
 </head>
 
@@ -41,15 +41,58 @@
                         </svg>info@devstudio.com</a>
                 </li>
                 <li class="contacts__item">
-                    <a class="contacts__link" href="tel:+48111111111"><svg class="contacts__icon" width="10"
-                            height="16">
+                    <a class="contacts__link" href="tel:+48111111111">
+                        <svg class="contacts__icon" width="10" height="16">
                             <use href="./images/icons.svg#smartphone-icon"></use>
                         </svg>+48 111 111 111</a>
                 </li>
             </ul>
+
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="24" height="24">
+                    <use href="./images/icons.svg#mobile-menu-icon"></use>
+                </svg>
+            </button>
+
         </div>
     </header>
 
+    <!--mobile-menu-->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+
+        <button class="menu-toggle js-close-menu">
+            <svg width="24" height="24">
+                <use href="./images/icons.svg#x"></use>
+            </svg>
+        </button>
+
+        <ul class="mobile-menu">
+            <li class="mobile-menu__item"><a href="index.html" class="mobile-menu__link">Agencja</a></li>
+            <li class=" mobile-menu__item"><a href="portfolio.html" class="mobile-menu__link--current">Portfolio</a>
+            </li>
+            <li class=" mobile-menu__item"><a href="" class="mobile-menu__link">Kontakt</a></li>
+        </ul>
+
+        <div>
+            <ul class="mobile-contacts">
+                <li class="mobile-contacts__item">
+                    <a class="mobile-contacts__link--accent" href="tel:+48111111111">+48 111 111 111</a>
+                </li>
+                <li class="mobile-contacts__item">
+                    <a class="mobile-contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+
+            <ul class="mobile-socials">
+                <li class="mobile-socials__item"><a href="" class="mobile-socials__link">Instagram</a></li>
+                <li class="mobile-socials__item"><a href="" class="mobile-socials__link">Twitter</a></li>
+                <li class="mobile-socials__item"><a href="" class="mobile-socials__link">Facebook</a></li>
+                <li class="mobile-socials__item"><a href="" class="mobile-socials__link">LinkedIn</a></li>
+            </ul>
+        </div>
+
+    </div>
 
 
     <main>
@@ -69,8 +112,7 @@
                     <li class="gallery__item">
                         <a class="gallery__link" href="#">
                             <div class="gallery__overlay">
-                                <img src="./images/portfolio-1.jpg" alt="Strona intenrnetowa Technocrack" width=370
-                                    height=294>
+                                <img src="./images/portfolio-1.jpg" alt="Strona intenrnetowa Technocrack">
                                 <p class="gallery__text">
                                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                                     koronawirusa. Firmy wykorzystują tę platformę
@@ -88,8 +130,7 @@
                     <li class="gallery__item">
                         <a class="gallery__link" href="#">
                             <div class="gallery__overlay">
-                                <img src="./images/portfolio-2.jpg" alt="Dwóch mężczyzn grajacych w koszykówkę"
-                                    width=370 height=294>
+                                <img src="./images/portfolio-2.jpg" alt="Dwóch mężczyzn grajacych w koszykówkę">
                                 <p class="gallery__text">
                                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                                     koronawirusa. Firmy wykorzystują tę platformę
@@ -107,7 +148,7 @@
                     <li class="gallery__item">
                         <a class="gallery__link" href="#">
                             <div class="gallery__overlay">
-                                <img src="./images/portfolio-3.jpg" alt="Logo firmy z rybą" width=370 height=294>
+                                <img src="./images/portfolio-3.jpg" alt="Logo firmy z rybą">
                                 <p class="gallery__text">
                                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                                     koronawirusa. Firmy wykorzystują tę platformę
@@ -125,8 +166,7 @@
                     <li class="gallery__item">
                         <a class="gallery__link" href="#">
                             <div class="gallery__overlay">
-                                <img src="./images/portfolio-4.jpg" alt="Zdjęcie czarnych słuchawek" width=370
-                                    height=294>
+                                <img src="./images/portfolio-4.jpg" alt="Zdjęcie czarnych słuchawek">
                                 <p class="gallery__text">
                                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                                     koronawirusa. Firmy wykorzystują tę platformę
@@ -144,7 +184,7 @@
                     <li class="gallery__item">
                         <a class="gallery__link" href="#">
                             <div class="gallery__overlay">
-                                <img src="./images/portfolio-5.jpg" alt="Dwie paczki" width=370 height=294>
+                                <img src="./images/portfolio-5.jpg" alt="Dwie paczki">
                                 <p class="gallery__text">
                                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                                     koronawirusa. Firmy wykorzystują tę platformę
@@ -162,8 +202,7 @@
                     <li class="gallery__item">
                         <a class="gallery__link" href="#">
                             <div class="gallery__overlay">
-                                <img src="./images/portfolio-6.jpg" alt="Monitor przedstawiający stronę WWW" width=370
-                                    height=294>
+                                <img src="./images/portfolio-6.jpg" alt="Monitor przedstawiający stronę WWW">
                                 <p class="gallery__text">
                                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                                     koronawirusa. Firmy wykorzystują tę platformę
@@ -181,8 +220,7 @@
                     <li class="gallery__item">
                         <a class="gallery__link" href="#">
                             <div class="gallery__overlay">
-                                <img src="./images/portfolio-7.jpg" alt="Magazyn z kolorowymi obrazkami" width=370
-                                    height=294>
+                                <img src="./images/portfolio-7.jpg" alt="Magazyn z kolorowymi obrazkami">
                                 <p class="gallery__text">
                                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                                     koronawirusa. Firmy wykorzystują tę platformę
@@ -200,8 +238,7 @@
                     <li class="gallery__item">
                         <a class="gallery__link" href="#">
                             <div class="gallery__overlay">
-                                <img src="./images/portfolio-8.jpg" alt="Magazyn z kolorowymi obrazkami" width=370
-                                    height=294>
+                                <img src="./images/portfolio-8.jpg" alt="Magazyn z kolorowymi obrazkami">
                                 <p class="gallery__text">
                                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                                     koronawirusa. Firmy wykorzystują tę platformę
@@ -220,7 +257,7 @@
                         <a class="gallery__link" href="#">
                             <div class="gallery__overlay">
                                 <img src="./images/portfolio-9.jpg"
-                                    alt="Laptop, na którego wyświatlaczu widać aplikacje" width=370 height=294>
+                                    alt="Laptop, na którego wyświatlaczu widać aplikacje">
                                 <p class="gallery__text">
                                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                                     koronawirusa. Firmy wykorzystują tę platformę
@@ -310,6 +347,8 @@
         </div>
 
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
